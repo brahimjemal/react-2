@@ -1,28 +1,23 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Card from './Card';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="Appk">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <p>notre èquipe</p>
+          <Card url="https://robohash.org/ibrahim" titre="Brahim Jmal" job="Developer" age="25"/>
+          <Card url="https://robohash.org/123" titre="software" />
+          <Card url="https://robohash.org/1234" titre="cat1" />
+          <Card url="https://robohash.org/12345" titre="cat2" />
         </header>
       </div>
     );
   }
 }
 
+// f(a,b) --> a+b
 export default App;
